@@ -131,10 +131,6 @@ module.exports = (env, argv) => {
           from: 'public/*.ico',
           flatten: true,
         },
-        {
-          from: 'public/img/',
-          to: 'img/',
-        },
       ]),
       new MiniCssExtractPlugin({
         filename: '[hash].css',
