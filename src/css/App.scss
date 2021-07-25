@@ -1,0 +1,68 @@
+@import '~bootstrap/scss/bootstrap';
+
+body {
+  margin: 8px;
+}
+
+.wrapper {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1440px;
+  flex-direction: row;
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+}
+
+h5 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+aside {
+  min-width: 150px;
+  > *:last-of-type() {
+    margin-top: 16px;
+  }
+}
+
+table th {
+  text-align: center;
+}
+
+.add-user {
+  text-align: center;
+  > * {
+    margin: 0 auto;
+    display: block;
+  }
+  input {
+    margin: 8px auto;
+  }
+}
+
+.animal-name {
+  text-transform: capitalize;
+}
+
+.animals-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  > div {
+    padding: 24px;
+  }
+}
+
+button.show-more {
+  position: absolute;
+  right: 16px;
+}
+
+@media only screen and (max-width: 480px) {
+  aside {
+    display: none;
+  }
+}
